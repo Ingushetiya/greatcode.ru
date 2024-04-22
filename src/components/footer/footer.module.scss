@@ -1,0 +1,64 @@
+footer {
+  background-color: #005a87;
+  text-align: center;
+  color: white;
+  width: 100%;
+  p {
+    margin: 0;
+    padding: 5px;
+  }
+}
+.social_follow {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.email_adress {
+  .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 16px;
+    }
+    path {
+      fill: white;
+    }
+  }
+  .adress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.social_icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  a {
+    transition: 1s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+@media (max-width: 768px) {
+  footer{
+    text-align: left;
+  }
+  .social_follow {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #e1e1e1;
+    .social_icons{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .number_footer{
+    display: flex;
+  }
+}

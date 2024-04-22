@@ -1,0 +1,55 @@
+header {
+  position: -webkit-sticky; /* Для поддержки Safari */
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo img {
+  width: 120px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  font-family: 'Nunito';
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.contact {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.contact img {
+  width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

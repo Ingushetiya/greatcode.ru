@@ -1,0 +1,116 @@
+
+html {
+  scroll-behavior: smooth;
+}
+main {
+  font-family: 'Nunito';
+  color: #fff;
+  text-align: center;
+}
+section {
+  margin-bottom: 40px;
+  padding: 0 20px;
+
+}
+h2 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.about {
+  display: flex;
+  flex-wrap:wrap;
+  .title {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 50px;
+      overflow-wrap: break-word;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    p {
+      text-align: left;
+      color: #fff;
+      font-size: 18px;
+    }
+    button {
+      width: 150px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      cursor: pointer;
+    }
+  }
+  .title_img {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+/* Стили для формы */
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type='text'] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  // background-color: #2575fc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5591fc;
+}
+ul {
+  list-style-type: none;
+}
+
+//services
+.services {
+  margin-top: 50px;
+}
+
+.form_tacher {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    h1{
+      font-size: 30px;
+    }
+
+  .about .title_img {
+    display: none;
+  }
+  .about .title {
+    max-width: 90%; /* Занимает всю ширину, когда изображение не отображается */
+    h1{
+      font-size: 20px;
+    }
+  }
+}

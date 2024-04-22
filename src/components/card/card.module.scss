@@ -1,0 +1,54 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 20px;
+  .card {
+    width: 250px;
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+      0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15), 0 16px 16px rgba(0, 0, 0, 0.15);
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+.card:hover {
+  cursor: pointer;
+  background-color: rgba(56, 52, 140, 0.565);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Изначально делаем текст невидимым */
+  transition: opacity 0.5s ease; /* Плавное изменение прозрачности */
+  pointer-events: none; /* Чтобы клик по оверлею не блокировал клик по ссылке */
+}
+
+.card:hover .overlay {
+  opacity: 1; /* Отображение текста при наведении */
+}
+
+.card:hover .card_block {
+  opacity: 0.3;
+}
